@@ -3,12 +3,12 @@ import { UpperCasePipe } from '@angular/common';
 import { RouterModule } from '@angular/router';
 
 @Component({
-  selector: 'app-perfil',
+  selector: 'app-preferencias',
   imports: [UpperCasePipe, RouterModule],
-  templateUrl: './perfil.html',
-  styleUrl: './perfil.css',
+  templateUrl: './preferencias.html',
+  styleUrl: './preferencias.css',
 })
-export class Perfil {
+export class Preferencias {
   isOpen = false;
 
   toggleDropdown(event: Event) {
@@ -34,7 +34,7 @@ export class Perfil {
   isUser = false;
 
   toogleUser(event: Event) {
-    event.preventDefault(); // evita refrescar la página
+    event.preventDefault();
     this.isUser = !this.isUser;
   }
 

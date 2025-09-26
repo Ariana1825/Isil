@@ -14,7 +14,7 @@
         <ul class="dropdown-menu" [class.open]="!isUser">
           <li><a class="dropdown-item" href="#" [routerLink]="['/perfil']">Perfil</a></li>
           <li><a class="dropdown-item" href="#" [routerLink]="['/calificaciones']" >Calificaciones</a></li>
-          <li><a class="dropdown-item" href="#" [routerLink]="['/calendario']">Calendario</a></li>
+          <li><a class="dropdown-item" href="#" [routerLink]="['/calendario']" >Calendario</a></li>
           <li><a class="dropdown-item" href="#" [routerLink]="['/preferencias']">Preferencias</a></li>
           <li><a class="dropdown-item" href="#" [routerLink]="['/cerrar']">Cerrar Sesión</a></li>
         </ul>
@@ -29,10 +29,10 @@
     <nav class="menu-enlace">
 
       <ul class="nav nav-pills">
-        <li class="nav-item">
+        <li class="nav-item blue">
           <i class="fa-solid fa-house fa-xs" [routerLink]="['/home']"></i>
         </li>
-        <li class="nav-item blue">
+        <li class="nav-item">
           <a class="nav-link " aria-current="page" href="#" [routerLink]="['/my']">Área personal</a>
         </li>
         <li class="nav-item yellow">
@@ -82,107 +82,27 @@
   </div>
 </header>
 <main>
-  <div class="personal-area">
-    <h2>Área personal</h2>
+<div class="contenedor">
+   <h2>Calendario</h2>
     <div class="espacio">
 
-      <div class="timeline">
-        <div class="title">Línea de tiempo</div>
-
-        <div class="timer">
-          <div class="timer-container">
-            <i class="fa-regular fa-alarm-clock"></i>
-            <i class="fa-solid fa-chevron-down "></i>
-            
-          </div>
-
-          <div class="timer-container">
-            <i class="fa-solid fa-bars"></i>
-            <i class="fa-solid fa-chevron-down "></i>
-          </div>
-          
-        </div>
-
-        <div class="PA">
-          @for(tarea of tareaJ; track $index){
-          <div class="tarea1">
-            <div class="fecha">
-              <b>{{tarea.fecha}}</b>
-            </div>
-            <div class="info-tarea">
-              <div class="proceso">
-                <p class="hora">{{tarea.hora}}</p>
-                <i class="fa-solid fa-file-arrow-up"></i>
-                
-              </div>
-              <div class="aprendizaje">
-                <h5>PROCESO DE APRENDIZAJE 1</h5>
-                <p class="info-curso">Vencimiento de Tarea - {{tarea.curso}}</p>
-              </div>
-              @if(tarea.tarea){
-                <button class="agregar">AGREGAR ENTREGA</button>
-              }
-              
-            </div>
-          </div>
-          }
-
-          <div class="tarea2">
-            <div class="fecha"><b>viernes, 19 de septiembre de 2025</b></div>
-            @for(tarea of tareaV; track $index){
-
-            <div class="info-tarea">
-              <div class="proceso">
-                <p class="hora">{{tarea.hora}}</p>
-                <i class="fa-solid fa-file-arrow-up"></i>
-              </div>
-              <div class="aprendizaje">
-                <h5>PROCESO DE APRENDIZAJE 1</h5>
-                <p class="info-curso">Vencimiento de Tarea - {{tarea.curso}}</p>
-              </div>
-              @if(tarea.tarea){
-                <button class="agregar">AGREGAR ENTREGA</button>
-              }
-             
-            </div>
-
-            }
-          </div>
-
-          <div class="tarea3">
-            <div class="fecha"><b>sábado, 20 de septiembre de 2025</b></div>
-            @for(tarea of tareaS; track $index){
-
-            <div class="info-tarea">
-              <div class="proceso">
-                <p class="hora">{{tarea.hora}}</p>
-                <i class="fa-solid fa-file-arrow-up"></i>
-              </div>
-              <div class="aprendizaje">
-                <h5>PROCESO DE APRENDIZAJE 1</h5>
-                <p class="info-curso">Vencimiento de Tarea - {{tarea.curso}}</p>
-              </div>
-              @if(tarea.tarea){
-                <button class="agregar">AGREGAR ENTREGA</button>
-              }
-              
-            </div>
-
-            }
-            
-          </div>
-        </div>
-
-      </div>
-
       <div class="calendario">
-        <div class="title">
-          Calendario
-        <div class="blue calendar-border"></div>
-        </div>
         
         <div class="cursos">
           <div class="custom-select">
+            <button [class.open]="cursos"
+                class="nav-item dropdown">
+        <h4 class="nav-link dropdown-toggle" href="#" (click)="toogleCursos()">
+        Mes
+        </h4>
+       <ul class="dropdown-menu" [class.open]="!isUser" >
+       <li><a class="dropdown-item" href="#">Mes</a></li>
+       <li><a class="dropdown-item" href="#">Día</a></li>
+       <li><a class="dropdown-item" href="#">Próximos eventos</a></li>
+       
+       </ul>
+  
+       </button>
            <select class="select custom-select cal_courses_flt ml-1 mr-auto" 
                  id="calendar-course-filter-1" 
                  name="course">
@@ -285,8 +205,9 @@
       </div>
 
     </div>
-  </div>
+</div>
 </main>
 <footer>
   <div></div>
 </footer>
+

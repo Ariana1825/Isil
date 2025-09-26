@@ -14,7 +14,7 @@
         </h2>
        <ul class="dropdown-menu" [class.open]="!isUser" >
        <li><a class="dropdown-item" href="#" [routerLink]="['/perfil']">Perfil</a></li>
-       <li><a class="dropdown-item" href="#" [routerLink]="['/calificaciones']" >Calificaciones</a></li>
+       <li><a class="dropdown-item" href="#" [routerLink]="['/calificaciones']">Calificaciones</a></li>
        <li><a class="dropdown-item" href="#" [routerLink]="['/calendario']">Calendario</a></li>
        <li><a class="dropdown-item" href="#" [routerLink]="['/preferencias']">Preferencias</a></li>
        <li><a class="dropdown-item" href="#" [routerLink]="['/cerrar']">Cerrar Sesión</a></li>
@@ -30,13 +30,13 @@
     <nav class="menu-enlace">
 
   <ul class="nav nav-pills">
-  <li class="nav-item blue">
-    <i class="fa-solid fa-house fa-xs "  [routerLink]="['/home']"></i>
+  <li class="nav-item blue" >
+    <i class="fa-solid fa-house fa-xs"  [routerLink]="['/home']"></i>
   </li>
   <li class="nav-item">
     <a class="nav-link " aria-current="page" href="#" [routerLink]="['/my']">Área personal</a>
   </li>
-  <li class="nav-item yellow" >
+  <li class="nav-item" >
     <a class="nav-link " aria-current="page" href="#" [routerLink]="['/cursos']">Mis cursos</a>
   </li>
   <li class="nav-item">
@@ -45,7 +45,7 @@
   <li class="nav-item">
     <a class="nav-link " aria-current="page" href="https://drive.google.com/drive/folders/1mHkgvHSrhNIqMSLylUA7NtUbzA5-Y_fB" target="_blank"   rel="noopener noreferrer">GUÍAS</a>
   </li>
-  <li class="nav-item dropdown" [class.open]="isOpen">
+  <li class="nav-item dropdown " [class.open]="isOpen">
   <a class="nav-link dropdown-toggle" href="#" (mouseenter)="toggleDropdown($event)">
     Servicios ISIL
   </a>
@@ -82,9 +82,8 @@
     
 </div>
 </header>
-
 <main>
-    <div class="contenedor">
+<div class="contenedor">
         <div class="superior">
             <div class="superior-paso1">
             <h3 class="eh">EH</h3>
@@ -94,62 +93,25 @@
         </div>
         <div class="inferior">
             <div class="inferior-paso1">
-                <h6>Detalles de usuario</h6>
-                
-                <div>
-                <p><b style="color: #5a5a5a;">Dirección de correo</b></p>
-                <p><a href="">{{nombreUsuario}} </a>  (Visible para otros participantes del curso)</p>
-                </div>
+                <h3 style="font-weight: 400; color: #5a5a5a;">Cursos que estoy tomando</h3>
 
                 <div>
-                <p><b style="color: #5a5a5a;">Email Personal</b></p>
-                <p>eve010101@gmail.com</p>
-                </div>
-
-                <div>
-                    <h6>Detalles del curso</h6>
-                    <b style="color: #5a5a5a;">Perfiles de curso</b>
+                    
                     <ul>
-                        <li>5218.202520 - CALCULO PARA CIENCIAS E INGENIERIA (SRM)</li>
-                        <li>4761.202520 - DESARROLLO DE APLICACIONES MOVILES (SRM)</li>
-                        <li>3072.202520 - PROGRAMACION AVANZADA DE BASE DE DATOS (SRM)</li>
-                        <li>1451.202520 - COMUNICACION ESCRITA (SRM)</li>
-                        <li>1066.202520 - PROGRAMACION WEB I (SRM)</li>
-                        <li>3559.202520 - ANALISIS Y DISEÑO DE SISTEMAS I (SRM)</li>
-                        <li>2256.202520 - GESTION DE DISPOSITIVOS TECNOLOGICOS (SRM)</li>
-                        <li>3586.202520 - SOLUCIONES BASADAS EN INTERNET DE LAS COSAS (SRM)</li>
+                        <li class="titulo"><b style="color: #6d6d6d;">Nombre del curso</b><b style="color: #6d6d6d;">Calificación</b></li>
+                        <li><p>5218.202520 - CALCULO PARA CIENCIAS E INGENIERIA (SRM)</p>-</li>
+                        <li><p>4761.202520 - DESARROLLO DE APLICACIONES MOVILES (SRM)</p>-</li>
+                        <li><p>3072.202520 - PROGRAMACION AVANZADA DE BASE DE DATOS (SRM)</p>-</li>
+                        <li><p>1451.202520 - COMUNICACION ESCRITA (SRM)</p>-</li>
+                        <li><p>1066.202520 - PROGRAMACION WEB I (SRM)</p>-</li>
+                        <li><p>3559.202520 - ANALISIS Y DISEÑO DE SISTEMAS I (SRM)</p>-</li>
+                        <li><p>2256.202520 - GESTION DE DISPOSITIVOS TECNOLOGICOS (SRM)</p>-</li>
+                        <li><p>3586.202520 - SOLUCIONES BASADAS EN INTERNET DE LAS COSAS (SRM)</p>-</li>
                     </ul>
                 </div>
 
 
-            </div>
-            <div class="inferior-paso2">
-                <p>Editar perfil</p>
-            </div>
-            <div class="inferior-paso3">
-                <div>
-                    <h5 style="color: #5a5a5a;">Miscelánea</h5>
-                <ul>
-                    <li>Mis certificados</li>
-                    <li>Mensajes en foros</li>
-                    <li>Foros de discusión</li>
-                </ul>
-                </div>
-
-                <div>
-                    <h5 style="color: #5a5a5a;">Informes</h5>
-                <ul>
-                    <li>Sesiones del navegador</li>
-                    <li>Resumen de Calificaciones</li>
-                </ul>
-                </div>
-
-                <div>
-                    <h6 style="color: #5a5a5a;">App para dispositivos móviles</h6>
-                    <b style="color: #5a5a5a;">Último acceso al sitio</b>
-                    <p>viernes, 19 de septiembre de 2025, 12:10  (4 días 9 horas) (<a href="">Cerrar sesión</a>)
-                    </p>
-                </div>
+            
             </div>
         </div>
     </div>

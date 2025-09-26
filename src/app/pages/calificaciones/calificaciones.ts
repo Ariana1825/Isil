@@ -3,16 +3,16 @@ import { UpperCasePipe } from '@angular/common';
 import { RouterModule } from '@angular/router';
 
 @Component({
-  selector: 'app-perfil',
+  selector: 'app-calificaciones',
   imports: [UpperCasePipe, RouterModule],
-  templateUrl: './perfil.html',
-  styleUrl: './perfil.css',
+  templateUrl: './calificaciones.html',
+  styleUrl: './calificaciones.css',
 })
-export class Perfil {
+export class Calificaciones {
   isOpen = false;
 
   toggleDropdown(event: Event) {
-    event.preventDefault(); // evita refrescar la página
+    event.preventDefault();
     this.isOpen = !this.isOpen;
   }
 
@@ -23,7 +23,7 @@ export class Perfil {
   isOpenToo = false;
 
   toggleDropdownToo(event: Event) {
-    event.preventDefault(); // evita refrescar la página
+    event.preventDefault();
     this.isOpenToo = !this.isOpenToo;
   }
 
@@ -34,7 +34,7 @@ export class Perfil {
   isUser = false;
 
   toogleUser(event: Event) {
-    event.preventDefault(); // evita refrescar la página
+    event.preventDefault();
     this.isUser = !this.isUser;
   }
 

@@ -14,10 +14,10 @@
         </h2>
        <ul class="dropdown-menu" [class.open]="!isUser" >
        <li><a class="dropdown-item" href="#" [routerLink]="['/perfil']">Perfil</a></li>
-       <li><a class="dropdown-item" href="#">Calificaciones</a></li>
-       <li><a class="dropdown-item" href="#">Calendario</a></li>
-       <li><a class="dropdown-item" href="#">Preferencias</a></li>
-       <li><a class="dropdown-item" href="#">Cerrar Sesión</a></li>
+       <li><a class="dropdown-item" href="#" [routerLink]="['/calificaciones']" >Calificaciones</a></li>
+       <li><a class="dropdown-item" href="#" [routerLink]="['/calendario']">Calendario</a></li>
+       <li><a class="dropdown-item" href="#" [routerLink]="['/preferencias']">Preferencias</a></li>
+       <li><a class="dropdown-item" href="#" [routerLink]="['/cerrar']">Cerrar Sesión</a></li>
        </ul>
   
        </li>
@@ -50,16 +50,16 @@
     Servicios ISIL
   </a>
     <ul class="dropdown-menu" [class.open]="!isOpen" >
-    <li><a class="dropdown-item" href="#">Asesoría Psicológica</a></li>
+    <li><a class="dropdown-item" href="#" [routerLink]="['/psicologia']">Asesoría Psicológica</a></li>
     <li><a class="dropdown-item" href="#">Blibiotecas</a></li>
-    <li><a class="dropdown-item" href="#">Bolsa laboral</a></li>
-    <li><a class="dropdown-item" href="#">Comunidad ISIL</a></li>
+    <li><a class="dropdown-item" href="#" [routerLink]="['/bolsa-laboral']">Bolsa laboral</a></li>
+    <li><a class="dropdown-item" href="https://www.facebook.com/groups/553840748382298" target="_blank">Comunidad ISIL</a></li>
     <li><a class="dropdown-item" href="#">Consejería académica y Éxito Estudiantil</a></li>
     <li><a class="dropdown-item" href="#">Empleabilidad</a></li>
-    <li><a class="dropdown-item" href="#">Invetigación aplicada</a></li>
-    <li><a class="dropdown-item" href="#">Isilnet</a></li>
+    <li><a class="dropdown-item" href="#" [routerLink]="['/home']">Invetigación aplicada</a></li>
+    <li><a class="dropdown-item" href="#" [routerLink]="['/isilnet']">Isilnet</a></li>
     <li><a class="dropdown-item" href="#">Plataformas físicas</a></li>
-    <li><a class="dropdown-item" href="#">RadioIsil</a></li>
+    <li><a class="dropdown-item" href="https://open.spotify.com/show/5H6TUiDoRblC8Y3eLwgkLZ" target="_blank">RadioIsil</a></li>
     <li><a class="dropdown-item" href="#">Respuestas ISIL</a></li>
     <li><a class="dropdown-item" href="#">Vida ISIL</a></li>
   </ul>
@@ -72,7 +72,7 @@
   </a>
     <ul class="dropdown-menu" [class.open]="!isOpenToo" >
     <li><a class="dropdown-item" href="#">Escríbenos</a></li>
-    <li><a class="dropdown-item" href="#">Whatsapp ISIL+</a></li>
+    <li><a class="dropdown-item" href="https://api.whatsapp.com/send?phone=51987226837" target="_blank">Whatsapp ISIL+</a></li>
   </ul>
   
 </li>

@@ -5,6 +5,12 @@ import { AreaPersonal } from './pages/area-personal/area-personal';
 import { IsilNet } from './pages/isil-net/isil-net';
 import { Cursos } from './pages/cursos/cursos';
 import { Perfil } from './pages/perfil/perfil';
+import { Calificaciones } from './pages/calificaciones/calificaciones';
+import { Calendario } from './pages/calendario/calendario';
+import { Preferencias } from './pages/preferencias/preferencias';
+import { Cerrar } from './pages/cerrar/cerrar';
+import { Psicologia } from './pages/psicologia/psicologia';
+import { BolsaLaboral } from './pages/bolsa-laboral/bolsa-laboral';
 
 export const routes: Routes = [
   {
@@ -30,5 +36,29 @@ export const routes: Routes = [
   {
     path: 'perfil',
     component: Perfil,
+  },
+  {
+    path: 'calificaciones',
+    component: Calificaciones,
+  },
+  {
+    path: 'calendario',
+    component: Calendario,
+  },
+  {
+    path: 'preferencias',
+    component: Preferencias,
+  },
+  {
+    path: 'cerrar',
+    component: Cerrar,
+  },
+  {
+    path: 'psicologia',
+    component: Psicologia,
+  },
+  {
+    path: 'bolsa-laboral',
+    component: BolsaLaboral,
   },
 ];

@@ -3,12 +3,12 @@ import { UpperCasePipe } from '@angular/common';
 import { RouterModule } from '@angular/router';
 
 @Component({
-  selector: 'app-perfil',
+  selector: 'app-calendario',
   imports: [UpperCasePipe, RouterModule],
-  templateUrl: './perfil.html',
-  styleUrl: './perfil.css',
+  templateUrl: './calendario.html',
+  styleUrl: './calendario.css',
 })
-export class Perfil {
+export class Calendario {
   isOpen = false;
 
   toggleDropdown(event: Event) {
@@ -34,7 +34,7 @@ export class Perfil {
   isUser = false;
 
   toogleUser(event: Event) {
-    event.preventDefault(); // evita refrescar la página
+    event.preventDefault();
     this.isUser = !this.isUser;
   }
 
@@ -43,4 +43,10 @@ export class Perfil {
   }
 
   nombreUsuario = 'eve.holt@reqres.in';
+
+  cursos = false;
+
+  toogleCursos() {
+    this.cursos = !this.cursos;
+  }
 }

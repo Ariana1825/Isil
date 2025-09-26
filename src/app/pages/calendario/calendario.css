@@ -200,10 +200,9 @@ a:hover{
     color: white;
     border-radius: 10px;
 }
-
 main{
     width: 100%;
-    height: 94vh;
+    height: 110vh;
     display: flex;
     flex-wrap: wrap;
     background-color: #F2F4F6;
@@ -211,101 +210,187 @@ main{
 }
 .contenedor{
     width: 77.08vw;
-    height: 90vh;
+    height: 100vh;
     display: flex;
     flex-wrap: wrap;
     
 }
-.superior{
-    width: 100%;
-    height: 14vh;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-}
 
-.superior-paso2{
-    margin-left: 1vh;
-    width: 20%;
-    height: 4.5vh;
-    background-color: #F9BF3B;
-    color: white;
-    border: none;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
-    border-radius: 2px;
+.contenedor h2{
+    margin-top: 3vh;
+    font-weight: 400;
+    color:#3a454bd7;
 }
-.inferior{
+.espacio{
     width: 100%;
-    height: 76vh;
-    display: flex;
-    flex-wrap: wrap;
+    height: 97vh;
     background-color: white;
-    border: 1px solid rgba(0, 0, 0, 0.071);
     border-radius: 5px;
-    justify-content: space-between;
-}
-.inferior-paso1{
-    width: 40%;
-    height: 100%;
     display: flex;
     flex-wrap: wrap;
-    padding: 4vh 0vh 4vh 5vh;
-}
-.inferior-paso1 h6,b{
-    width: 100%;
-    color: #3A454B;
-}
-.inferior-paso1 a{
-    color: #00aeef;
-}
-.inferior-paso1 p{
-    color: #4E5862;
-}
-.inferior-paso1 ul{
-    list-style-type: none;
-    color: #00A0E6;
-    padding: 0;
-    line-height: 3.3vh;
-}
-.inferior-paso2{
-    width: 10%;
-    height: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-.inferior-paso2 p{
-    color: #00A0E6;
-    margin-top: 9vh;
-}
-.inferior-paso3{
-    width: 48%;
-    height: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    padding: 4vh 0vh 4vh 0vh;
+    margin-top: 2vh;
+    border: 1px solid rgba(0, 0, 0, 0.074);
+    padding: 3.5vh;
 }
 
-.inferior-paso3 p{
-    color: #4E5862;
+
+
+.calendario{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
 }
-.inferior-paso3 ul{
-    list-style-type: none;
+.calendario .title{
+    width: 100%;
+    height: 4.5vh;
+    color: white;
+    font-weight: 600;
+    font-size: 1.3rem;
+    padding-left: 1vh;
+    padding-bottom: 1vh;
+    background-color: #3A454B;
+}
+.calendar-border{
+    margin-top: 1.1vh;
+    width: 8vh;
+    height: 3px;
+}
+
+.cursos{
+    width: 100%;
+    height: 2%;
+
+}
+.custom-select {
+  margin-left: 3px;
+  position: relative;
+  display: inline-block;
+  color: #898B8D;
+  
+}
+.custom-select button{
+    background-color: white;
+    color: #F9BF3B;
+    border: 1px solid rgba(0, 0, 0, 0.148);
+    border-radius: 2px;
+    height: 5vh;
+    width: 5vw;
+    transition-duration: .3s;
+    
+}
+.custom-select button:hover{
+    background-color: #F9BF3B;
+}
+.nav-item h4{
+    color: #F9BF3B;
+    margin: 0;
+    transition-duration: .2s;
+}
+.custom-select h2:hover{
+    color: white;
+}
+.custom-select select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border-radius: 4px;
+  margin-left: 4vh;
+  width: 17vh;
+  padding: .7vh 2vh;
+  border: 1px solid #898B8D;
+  outline: none;
+}
+
+.flechas {
+  position: absolute;
+  right: 8px;
+  top: 53%;
+
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  font-size: 10px;
+  pointer-events: none; /* no bloquea clics */
+}
+.button{
+    margin-left: 100vh;
+    border: none;
+    padding: 1vh 2.5vh;
+    border-radius: 2px;
+    color: white;
+}
+
+
+.tabla{
+    width: 100%;
+    height: 70%;
+    margin-bottom: 10vh;
+
+}
+table{
+    width: 100%;
+}
+thead{
+    border: 1px solid rgba(0, 0, 0, 0.152);
+    border-style: dotted;
+}
+th{
+    padding-left: 2vh;
+}
+th,tr, td{
+    border: 1px solid rgba(0, 0, 0, 0.09);
+    border-style: dotted;
+}
+td{
+    vertical-align: top; 
+    padding: 8px;    
+    padding-left: 2vh;
+    height: 14vh;
+    margin-top: 4vh;
+}
+tbody{
+    border: 1px solid rgba(0, 0, 0, 0.09);
+    border-style: dotted;
+    height: 100%;
+}
+
+.fecha-evento{
+    margin: auto;
+    width: 99%;
+    height:5%;
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
     color: #00A0E6;
-    padding: 0;
-    line-height: 3.3vh;
 }
-.inferior-paso3 a{
-    color: #00aeef;
+.fecha-evento p{
+    color: #4E585D;
+    font-size: 1.5rem;
 }
-.inferior-paso3 div{
+.descripcion{
+    margin-top: 2vh;
     width: 100%;
+    height: 3%;
+    display: flex;
+    color:#00A0E6;
 }
-.inferior-paso3 h5,b{
-    width: 100%;
-    color: #3A454B;
+.descripcion li{
+    margin-left: 3vh;
+    
 }
+
+.chiquito td{
+    height: 3vh;
+}
+td .blue{
+    width: 3vh;
+    height: 3vh;
+    padding: 1px 4px 0 4px;
+    color: white;
+    border-radius: 50px;
+}
+
 footer{
 
     width: 100%;

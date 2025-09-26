@@ -201,9 +201,10 @@ a:hover{
     border-radius: 10px;
 }
 
+
 main{
     width: 100%;
-    height: 94vh;
+    height: 79vh;
     display: flex;
     flex-wrap: wrap;
     background-color: #F2F4F6;
@@ -211,20 +212,27 @@ main{
 }
 .contenedor{
     width: 77.08vw;
-    height: 90vh;
+    height: 79vh;
     display: flex;
     flex-wrap: wrap;
     
 }
 .superior{
     width: 100%;
+    height: 10vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.superior-paso1{
+    width: 25%;
     height: 14vh;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
 }
-
 .superior-paso2{
     margin-left: 1vh;
     width: 20%;
@@ -237,75 +245,65 @@ main{
 }
 .inferior{
     width: 100%;
-    height: 76vh;
+    height: 588.2px;
     display: flex;
     flex-wrap: wrap;
     background-color: white;
     border: 1px solid rgba(0, 0, 0, 0.071);
     border-radius: 5px;
-    justify-content: space-between;
 }
 .inferior-paso1{
-    width: 40%;
+    width: 100%;
     height: 100%;
     display: flex;
     flex-wrap: wrap;
     padding: 4vh 0vh 4vh 5vh;
 }
-.inferior-paso1 h6,b{
+.inferior-paso1 div:nth-of-type(1){
     width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.inferior-paso1 h3{
+    width: 100%;
+    height: 6vh;
+    padding: 1vh;
     color: #3A454B;
 }
-.inferior-paso1 a{
-    color: #00aeef;
+
+.inferior-paso1 .titulo{
+    width: 100%;
+    height: 6vh;
+    padding: 2vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    color: #3A454B;
+    background-color: #E9EEF3;
+}
+.inferior-paso1 b:nth-of-type(1){
+    width: 84%;
+}
+.inferior-paso1 b:nth-of-type(2){
+    width: 16%;
 }
 .inferior-paso1 p{
-    color: #4E5862;
+    color: #00A0E6;
+    width: 84%;
 }
 .inferior-paso1 ul{
     list-style-type: none;
-    color: #00A0E6;
+    line-height: 2vh;
+    width: 98%;
     padding: 0;
-    line-height: 3.3vh;
 }
-.inferior-paso2{
-    width: 10%;
-    height: 100%;
+.inferior-paso1 li{
+    padding: .8vh;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-}
-.inferior-paso2 p{
-    color: #00A0E6;
-    margin-top: 9vh;
-}
-.inferior-paso3{
-    width: 48%;
-    height: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    padding: 4vh 0vh 4vh 0vh;
+    border-top: 1px solid #cbcbcb;
 }
 
-.inferior-paso3 p{
-    color: #4E5862;
-}
-.inferior-paso3 ul{
-    list-style-type: none;
-    color: #00A0E6;
-    padding: 0;
-    line-height: 3.3vh;
-}
-.inferior-paso3 a{
-    color: #00aeef;
-}
-.inferior-paso3 div{
-    width: 100%;
-}
-.inferior-paso3 h5,b{
-    width: 100%;
-    color: #3A454B;
-}
 footer{
 
     width: 100%;
