@@ -57,3 +57,15 @@ Angular CLI does not come with an end-to-end testing framework by default. You c
 ## Additional Resources
 
 For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+
+
+
+Para poder ingresar al login correctamente:
+{
+     "correo electrónico":  "eve.holt@reqres.in" ,
+     "contraseña":  "cityslicka" 
+}
+Este es el token:
+{
+    "token": "QpwL5tke4Pnpja7X4"
+}
